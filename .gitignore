@@ -23,8 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 
+# Lock files
+*.lock
+
 # PNPM lock
 pnpm-lock.yaml
 
 # Database
 *.db
+
