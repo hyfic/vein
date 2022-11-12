@@ -2,7 +2,7 @@ use crate::database::init_app_db;
 use crate::database::record_model;
 
 #[tauri::command]
-pub fn read_records() -> Result<Vec<database_model::DatabaseType>, String> {
+pub fn read_records() -> Result<Vec<record_model::RecordType>, String> {
     let db = init_app_db()?;
     record_model::read_all(&db)
 }

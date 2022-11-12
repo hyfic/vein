@@ -1,5 +1,4 @@
 use rusqlite::{Connection, Result};
-use std::path::Path;
 
 pub fn connect_app_database() -> Result<Connection> {
     let conn = Connection::open("app.db")?;

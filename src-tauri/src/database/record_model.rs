@@ -21,7 +21,7 @@ pub fn create(db: &Connection, created_at: String, data: String) -> Result<i64, 
     }
 }
 
-pub fn read_all(db: &Connection) -> Result<Vec<DatabaseType>, String> {
+pub fn read_all(db: &Connection) -> Result<Vec<RecordType>, String> {
     let mut record_vec: Vec<RecordType> = Vec::new();
 
     let mut sql_query = match db.prepare("SELECT * FROM Record") {
